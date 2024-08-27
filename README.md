@@ -14,7 +14,8 @@ sub_140001000함수를 분석해 보도록 하겠다.
 
 아래 그림과 같이 입력 값을 배열로 한글자씩 가져와 1 x 16 + 8 = 24, 24글자를 비교한다.
 비교 할 때 사용자 입력값을 순서 대로 가져와 비교한다.
-비교 식:  [0 ~ 24] xor (배열[0 ~ 24] * 2 + [0 ~ 24])
+
+비교 식:  [0 ~ 24] xor (배열[0 ~ 24] + 2 * [0 ~ 24])
 
 <img width="553" alt="스크린샷 2024-08-27 오후 8 49 47" src="https://github.com/user-attachments/assets/48505370-b743-494b-adbf-2d671bc1f8e1">
 
@@ -27,10 +28,11 @@ Hex_view를 통해 값 확인
 <img width="682" alt="스크린샷 2024-08-27 오후 8 55 03" src="https://github.com/user-attachments/assets/70c642a0-24e8-4ed5-8168-cc59599eb057">
 
 Shift + E를 눌러 값 확인
+비교 식이 적용되어 나온 값이기 때문에 비교식을 역으로 해주기 위해 -2 * (0~24)를 한 후, xor 연산까지 해준다.
 
 <img width="509" alt="스크린샷 2024-08-27 오후 8 56 13" src="https://github.com/user-attachments/assets/1b8300d6-8ea5-4775-818b-b35538d531c3">
 
-bytes 값을 python을 활용해 해석
+bytes 값을 python을 활용해 비교식을 역으로 진행하여 결과 값을 확인 한다.
 
 <img width="566" alt="스크린샷 2024-08-27 오후 9 13 36" src="https://github.com/user-attachments/assets/0140da1c-3f4d-43d1-b343-e2bc3bc1bae6">
 
