@@ -34,6 +34,8 @@ Shift + E를 눌러 값 확인
 
 bytes 값을 python을 활용해 비교식을 역으로 진행하여 결과 값을 확인 한다.
 
+## 결론
+
 <img width="566" alt="스크린샷 2024-08-27 오후 9 13 36" src="https://github.com/user-attachments/assets/0140da1c-3f4d-43d1-b343-e2bc3bc1bae6">
 
 <img width="807" alt="스크린샷 2024-08-27 오후 9 23 09" src="https://github.com/user-attachments/assets/401684d6-adc7-4dfc-919e-19a71edc3dff">
